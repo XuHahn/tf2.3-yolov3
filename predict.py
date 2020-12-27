@@ -1,5 +1,6 @@
 from yoloV3 import *
 from line import *
+import sys
 
 img = cv2.imread('test.jpg')
 model = YOLO_V3()
@@ -49,4 +50,6 @@ def draw_video(video_path):
 
 
 if __name__ == '__main__':
-    draw_video(r'D:\vedio\mda-ke1ujzduvrzw9ra5.mp4')
+    # draw_video(r'D:\vedio\mda-ke1ujzduvrzw9ra5.mp4')
+    args = sys.argv
+    print('hello world-',args)
