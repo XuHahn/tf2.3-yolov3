@@ -1,6 +1,6 @@
 FROM liker5092/python3-nginx-uwsgi
 WORKDIR /root
-COPY . /root/car
+COPY . /root
 EXPOSE 1234 
 RUN apt update
 RUN apt install -y libgl1-mesa-glx
