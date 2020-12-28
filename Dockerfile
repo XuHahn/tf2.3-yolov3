@@ -1,5 +1,6 @@
 FROM liker5092/python3-nginx-uwsgi
 WORKDIR /root
+CMD rm -r car
 CMD mkdir car
 COPY . /root/car
 EXPOSE 1234 
